@@ -1,0 +1,110 @@
+@font-face {
+	font-family:buxton-sketch;
+	src:url(assets/BuxtonSketch.ttf); }
+
+@font-face {
+	font-family:bariol_regular;
+	src:url(assets/bariol_regular-webfont.ttf); }
+
+@font-face {
+	font-family:edwardian;
+	src:url(assets/ITCEDSCR.ttf); }
+
+html, body {
+height:auto;
+width:auto; 
+margin: 0;
+padding: 0;}
+
+
+body {
+	font-family: bariol_regular;
+	font-size: 16px;
+	line-height: 1;
+	color: black;
+	text-align: center;
+	justify-content: center; }
+
+#welcometext {
+	font-family: edwardian;
+	font-size: 50px;
+	margin-bottom: 0;
+	margin-top: 10px;}
+
+/* .centercontent {
+	text-align: center;
+	margin-top: 0;
+	position: relative;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	color: white;	}
+ */
+.section-intro {
+	color: white;
+	background-image: url(images/bg.png); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-size: 20px; 
+	text-align: center;
+	margin-top: 0;
+	position: relative;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	color: white;
+	padding: 20% 0;
+}
+	
+.section-intro h1, .section-intro h2 {
+	/*position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);*/
+	display: flex;
+	justify-content: center;
+	margin-top: 0;}
+	
+.section-intro h1 {
+	/*grand title*/
+	font-size: 100px;
+	}
+
+.section-intro h3 {
+	font-size: 20px; }
+	
+.section-objective {
+	margin-top:0;
+	text-align: center;
+	background-color: white; 
+	font-size: 14px; }
+	
+
+.section-projects {
+	background-color: #00AA6B;
+	margin-bottom:0;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	/*todo*/
+}
+
+
+.section-specialties {
+	background-color: white;
+	padding-top: 0;
+	padding-bottom: 0;
+	/*todo*/
+}
+
+.section-contact {
+	background-color: #C4BCBC;
+	margin-top:0px;
+	padding-top: 1px;
+	padding-bottom: 1px;	}
+
+.contact-github {
+	background-image: url(images/github.png); }
+	
+.contact-mail {
+	background-image: url(images/mail.png); }
