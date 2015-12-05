@@ -20,4 +20,7 @@
 		targetElement: document.querySelector('#contact'),
 		duration: 2500
 	});
+	var elevatorTop = new Elevator({
+		element: document.querySelector('.elevator-button-top')
+	});
   }
