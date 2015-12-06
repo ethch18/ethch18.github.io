@@ -100,7 +100,7 @@ p {
 
 .section-intro {
 	color: white;
-	background-image: url(images/bg.jpg); 
+	background-image: url(images/bg4.png); 
 	background-attachment:fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -307,7 +307,7 @@ p {
 }
 
 .ext-full {
-	background-image: url(images/bg.jpg); 
+	background-image: url(images/bg.png); 
 	background-attachment:fixed;
 	background-size: cover;
 	background-repeat: no-repeat;
