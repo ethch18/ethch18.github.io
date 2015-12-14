@@ -150,6 +150,12 @@ p {
 
 .section-projects {
 	background-color: #17D193;
+	/*background-image: url(images/anotherbg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;*/
 	margin-top: 0px;
 	margin-bottom:0px;
 	padding-top: 0.25%;
