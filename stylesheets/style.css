@@ -288,7 +288,7 @@ p {
 	margin-bottom: 10%;
 	max-width: 90%;
 	border-radius:20px;
-	color: #17D193;
+	color: /*#17D193*/ #9CCC65;
 }
 
 ::-webkit-input-placeholder {
@@ -314,7 +314,7 @@ p {
 
 .ext-btn {
 	border-radius: 5px;
-	background-color: #17D193;
+	background-color: /*#17D193*/ #9CCC65;
 	color: white;
 /* 	margin-top: 0.5%;
 	margin-bottom: 2% */
