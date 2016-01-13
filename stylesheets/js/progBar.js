@@ -5,9 +5,9 @@
 
 // on page load...
 //moveProgressBar();
-window.onload = function() {
+/*window.onload = function() {
 	moveProgressBar();
-}
+}*/
 // on browser resize...
 $(window).resize(function() {
   moveProgressBar();

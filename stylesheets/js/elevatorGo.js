@@ -1,5 +1,6 @@
 /*Adaptation of Tim Holman's "Elevator" Script for this website, used under MIT License.*/
-  window.onload = function() {
+  //window.onload = function() {
+  function initElevator() {
 	var elevatorAbout = new Elevator({
 		element: document.querySelector('.elevator-button-about'),
 		targetElement: document.querySelector('#about'),
