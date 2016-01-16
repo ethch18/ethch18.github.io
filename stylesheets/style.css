@@ -59,18 +59,22 @@ p {
 
 .skewleft
 {
+	position: relative;
 	float: left;
-	margin-left: 10%
+	width: 50%;
+	min-height: 1px;
+	height: 100%
 }
 
 .skewright
 {
-	float: right;
+	text-align: right;
 }
-	
+
+
 .parentwrap
 {
-	height: 100%;
+	width = 80%;
 }
 	
 .navbar {
@@ -229,9 +233,11 @@ p {
  #bar-content{
 	color: white;
 	font-size: 18px;
+	line-height: 25px;
 	float: left;
-	padding-left: 1%;
-	padding-top: 1.5%;
+	padding-left: 2%;
+	padding-top: 12px;
+	overflow: visible; 
 }
 	
 #specialties-langname {
