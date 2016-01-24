@@ -266,11 +266,18 @@ p {
 	margin-top:0;
 	padding-top:0.25%;
 	padding-bottom: 1%;
-	position: fixed;
+	margin-bottom: 0;
+	/*position: fixed;*/
+	position: absolute;
 	bottom: 0px;
 	left: 0px;
 	width: 100%;
 	color: black;
+}
+
+.ext-wrapper {
+	/*height: 70vh; /*20%+10%*/*/
+	margin-bottom: 0;
 }
 
 .ext-form {
@@ -317,7 +324,7 @@ p {
 	padding-right:1%;
 	margin-left: 25%;
 	margin-right: 25%;
-	margin-top: 0px;
+	margin-top: 0;
 	margin-bottom: 10%;
 	max-width: 90%;
 	border-radius:20px;
@@ -353,6 +360,7 @@ p {
 	margin-bottom: 2% */
 }
 
+
 .ext-full {
 	background-image: url(images/bg4.png); 
 	background-attachment:fixed;
@@ -361,9 +369,9 @@ p {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	-webkit-background-size: cover;
-	margin-top: 20%;
-
-	
+	margin-top: 20% ;
+	margin-bottom: -20%;
+	/*height: 70vh;*/
 }
 
 .contact-github {
