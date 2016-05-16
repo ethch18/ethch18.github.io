@@ -67,10 +67,10 @@
 		<!-- Contact -->
 			<article class="container box style3">
 				<header>
-					<h2>Connect with me!</h2>
-					<p>Diam dignissim lectus eu ornare volutpat orci.</p>
+					<h2><a href="javascript:toggleDiv('contactForm');">Connect with me!</a></h2>
+					
 				</header>
-				<form action="https://formspree.io/ethanchau1@live.com" method="POST">
+				<form id="contactForm" style="display: none;" action="https://formspree.io/ethanchau1@live.com" method="POST">
 					<div class="row 50%">
 						<div class="6u 12u$(mobile)"><input type="text" class="text" name="name" placeholder="Name" /></div>
 						<div class="6u$ 12u$(mobile)"><input type="email" class="text" name="_replyto" placeholder="Email" /></div>
@@ -270,6 +270,12 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+			function toggleDiv(divId) {
+				$("#"+divId).toggle();
+			}
+			</script>
+
 
 	</body>
 </html>
