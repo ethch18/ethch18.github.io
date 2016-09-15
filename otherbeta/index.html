@@ -95,7 +95,7 @@
 							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
 								<h2>What's next?</h2>
 								<h4>You tell me!</h4>
-								<p><a href="#CTA">Contact Me</a> and let me know what I should work on next!</p><!--TODO: add animation to contact me scroll-->
+								<p><a href="#contact">Contact Me</a> and let me know what I should work on next!</p><!--TODO: add animation to contact me scroll-->
 							</div>
 						</section>
 					</section>
@@ -137,14 +137,15 @@
 						</div>
 					</section>
 
-				<!-- CTA/Contact -->
-					<section id="cta" class="wrapper style4">
+				<!-- CTA/Contact; "CTA" will do weird formatting -->
+					<section id="contact" class="wrapper style4">
 						<div class="inner">
 							<header style="text-align:center;">
-								<h2>Arcue ut vel commodo</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.</p>
+								<h2><a href="javascript:toggleDiv('contactForm');">Connect with me!</a></h2>
+								<p>Use this form for resume inquiries and more!</p>
 							</header>
-							<form id="contactForm" style="display: none;" action="https://formspree.io/ethanchau1@live.com" method="POST">
+							<div/>
+							<form id="contactForm" style="display:none;" action="https://formspree.io/ethanchau1@live.com" method="POST">
 								<div class="row uniform">
 									<div class="6u 12u$(mobile)"><input type="text" class="text" name="name" placeholder="Name" /></div>
 									<div class="6u$ 12u$(mobile)"><input type="email" class="text" name="_replyto" placeholder="Email" /></div>
@@ -153,9 +154,9 @@
 									<div class="12u$">
 										<textarea name="message" placeholder="Message"></textarea>
 									</div>
-									<div class="12u$">
+									<div class="12u$" style="padding-left:50%">
 										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
+											<li><input type="submit" style="transform:translate(-50%,0%);" value="Send Message" /></li>
 										</ul>
 									</div>
 									<input type="hidden" name="_next" value="../resume-thanks.html" />
@@ -173,7 +174,8 @@
 						<ul class="icons">
 							<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
 							<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="#" class="icon fa-code"><span class="label">UW Site</span></a></li>
+							<li><i class="icon fa fa-cog fa-spin  fa-fw"></i></li>
+							<li><a href="#" class="icon fa-university"><span class="label">UW Site</span></a></li>
 							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
@@ -191,6 +193,11 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">
+			function toggleDiv(divId) {
+				$("#"+divId).toggle();
+			}
+			</script>
 
 	</body>
 </html>

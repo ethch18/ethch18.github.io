@@ -3581,7 +3581,7 @@
 			-ms-order: 1;
 			order: 1;
 			padding-right: 3em;
-			width: 70%;
+			/*width: 70%;*/
 		}
 
 			#cta .inner header p {
@@ -3593,7 +3593,7 @@
 			-webkit-order: 2;
 			-ms-order: 2;
 			order: 2;
-			width: 30%;
+			/*width: 30%;*/
 		}
 
 		@media screen and (max-width: 980px) {
