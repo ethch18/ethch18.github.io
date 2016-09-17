@@ -3581,7 +3581,7 @@
 		-ms-justify-content: center;
 		justify-content: center;
 		cursor: default;
-		height: 95vh;
+		height: 80vh;
 		min-height: 35em;
 		overflow: hidden;
 		position: relative;
@@ -3949,7 +3949,7 @@
 		padding: em 0 0 0 ;
 		background-color: #1d242a;
 		text-align: center;
-		height: 2em;
+		height: 20vh;
 	}
 
 		#footerna .icons {
