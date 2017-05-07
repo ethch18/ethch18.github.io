@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Huehuehueh</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+	</head>
+	<body>
+		<p>Well hello there...</p>
+        <p>It appears that you have stumbled onto this mysterious page.</p>
+        <p>What is it, you ask?</p>
+        <p>Well..., I don't know...</p>
+        <p>Wait, what type of HTML tag am I?</p>
+        <!--What does 'p' mean to you?  ..................  puzzle?-->
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <p>Don't be a stranger!  Tell me, who are you?</p>
+        <input type="text" id="fn" name="fn">
+        <button type="button" onClick="fn()">Hm?</button>
+        <p style="color:red;visibility:hidden">Who's that?</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p id="welc">Well look who it is!  Hello, </p>
+        
+        
+        
+        
+        
+        
+        <script type="text/javascript">
+            var curdat = null;
+            var alldat = null;
+            
+            window.onload = function() {
+                $.getJSON('mystery.json', function(data) {
+                    console.log('it worked');
+                    <!-- console.log(data); -->
+                    <!-- alldat = data; -->
+                })
+            }
+			
+            function fn() {
+                var input = document.getElementById("fn").value;
+                if (alldat.hasOwnProperty(input)) {
+                    var welc = document.getElementById("welc");
+                    welc.value += input;
+                    curdat = alldat[input];
+                }
+			}
+		</script>
+    </body>
+</html>
