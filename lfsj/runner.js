@@ -14,7 +14,7 @@ function fn() {
     var welc = document.getElementById('welc');
     if (alldat.hasOwnProperty(input)) {
         curdat = alldat[input];
-        welc.textContent += curdat["nn"] + '!';
+        welc.textContent = 'Well look who it is!  Hello, ' + curdat["nn"] + '!';
         welc.style = "visibility:visible";
         fnfail.style = "color:red;visibility:hidden";
     }
