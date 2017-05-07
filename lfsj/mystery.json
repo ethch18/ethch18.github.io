@@ -1,6 +1,9 @@
 {
     "size": 1,
-    "sample": {
-        "fn": "sample"
+    "local": {
+        "nn": "local boy"
+    },
+    "root": {
+        "nn": "fake root user - thought you could get access, didn't ya"
     }
 }
