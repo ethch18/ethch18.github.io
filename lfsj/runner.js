@@ -13,12 +13,13 @@ function fn() {
     var fnfail = document.getElementById('fnfail');
     var welc = document.getElementById('welc');
     if (alldat.hasOwnProperty(input)) {
-        welc.textContent += input + '!';
-        welc.style = "visibility:visible";
         curdat = alldat[input];
+        welc.textContent += curdat["nn"] + '!';
+        welc.style = "visibility:visible";
         fnfail.style = "color:red;visibility:hidden";
     }
     else {
+        curdat = null;
         welc.textContent = 'Well look who it is!  Hello, ';
         welc.style = "visibility:hidden";
         fnfail.style = "color:red;visibility:visible";
