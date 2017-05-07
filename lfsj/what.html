@@ -29,7 +29,7 @@
         <p>Don't be a stranger!  Tell me, who are you?</p>
         <input type="text" id="fn" name="fn">
         <button type="button" onClick="fn()">Hm?</button>
-        <p style="color:red;visibility:hidden">Who's that?</p>
+        <p style="color:red;visibility:hidden" id="fnfail">Who's that?</p>
         <br>
         <br>
         <br>
@@ -53,11 +53,15 @@
             }
 			
             function fn() {
-                var input = document.getElementById("fn").value;
+                var input = document.getElementById('fn').value;
                 if (alldat.hasOwnProperty(input)) {
-                    var welc = document.getElementById("welc");
+                    var welc = document.getElementById('welc');
                     welc.value += input;
                     curdat = alldat[input];
+                    document.getElementById('fnfail').style = "color:red;visibility:visible";
+                }
+                else {
+                    document.getElementById('fnfail').style = "color:red;visibility:hidden";
                 }
 			}
 		</script>
