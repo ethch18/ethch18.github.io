@@ -54,14 +54,15 @@
 			
             function fn() {
                 var input = document.getElementById('fn').value;
+                var fnfail = document.getElementById('fnfail');
                 if (alldat.hasOwnProperty(input)) {
                     var welc = document.getElementById('welc');
-                    welc.value += input;
+                    welc.textContent += input;
                     curdat = alldat[input];
-                    document.getElementById('fnfail').style = "color:red;visibility:hidden";
+                    fnfail.style = "color:red;visibility:hidden";
                 }
                 else {
-                    document.getElementById('fnfail').style = "color:red;visibility:visible";
+                    fnfail.style = "color:red;visibility:visible";
                 }
 			}
 		</script>
