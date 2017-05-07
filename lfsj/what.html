@@ -34,7 +34,7 @@
         <br>
         <br>
         <br>
-        <p id="welc">Well look who it is!  Hello, </p>
+        <p id="welc" style="visibility:hidden">Well look who it is!  Hello, </p>
         
         
         
@@ -55,13 +55,16 @@
             function fn() {
                 var input = document.getElementById('fn').value;
                 var fnfail = document.getElementById('fnfail');
+                var welc = document.getElementById('welc');
                 if (alldat.hasOwnProperty(input)) {
-                    var welc = document.getElementById('welc');
-                    welc.textContent += input;
+                    welc.textContent += input + '!';
+                    welc.style = "visibility:visible";
                     curdat = alldat[input];
                     fnfail.style = "color:red;visibility:hidden";
                 }
                 else {
+                    welc.textContent = 'Well look who it is!  Hello, ';
+                    welc.style = "visibility:hidden";
                     fnfail.style = "color:red;visibility:visible";
                 }
 			}
