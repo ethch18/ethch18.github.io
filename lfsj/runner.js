@@ -23,5 +23,9 @@ function fn() {
         welc.textContent = 'Well look who it is!  Hello, ';
         welc.style = "visibility:hidden";
         fnfail.style = "color:red;visibility:visible";
+        if (input == 'sudo') {
+            var supwelc = document.getElementById('superwelc');
+            supwelc.style = "visibility:visible";
+        }
     }
 }

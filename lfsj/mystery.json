@@ -1,9 +1,12 @@
 {
-    "size": 1,
+    "size": 2,
     "local": {
         "nn": "local boy"
     },
     "root": {
         "nn": "fake root user - thought you could get access, didn't ya"
+    },
+    "sudo": {
+        "nn": "root superuser"
     }
 }
